@@ -14,12 +14,15 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        HUD.dimsBackground = false
+        PKHUD.sharedHUD.effect = UIBlurEffect(style: .dark)
+        HUD.dimsBackground = true
         HUD.allowsInteraction = false
+        HUDConfig.mainColor = UIColor.white
+        
     }
 
     @IBAction func showAnimatedSuccessHUD(_ sender: AnyObject) {
-        HUD.flash(.success, delay: 2.0)
+        HUD.flash(.labeledSuccess(title: "Gregé", subtitle: "HOUOIUOUO"), delay: 2.0)
     }
 
     @IBAction func showAnimatedErrorHUD(_ sender: AnyObject) {

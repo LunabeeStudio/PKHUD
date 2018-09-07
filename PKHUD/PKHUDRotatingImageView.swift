@@ -15,6 +15,7 @@ open class PKHUDRotatingImageView: PKHUDSquareBaseView, PKHUDAnimating {
 
     public func startAnimation() {
         imageView.layer.add(PKHUDAnimation.continuousRotation, forKey: "progressAnimation")
+        imageView.tintColor = HUDConfig.mainColor.withAlphaComponent(0.85)
     }
 
     public func stopAnimation() {

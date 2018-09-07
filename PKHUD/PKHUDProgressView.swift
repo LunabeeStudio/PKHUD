@@ -23,6 +23,7 @@ open class PKHUDProgressView: PKHUDSquareBaseView, PKHUDAnimating {
 
     public func startAnimation() {
         imageView.layer.add(PKHUDAnimation.discreteRotation, forKey: "progressAnimation")
+        imageView.tintColor = HUDConfig.mainColor.withAlphaComponent(0.85)
     }
 
     public func stopAnimation() {
