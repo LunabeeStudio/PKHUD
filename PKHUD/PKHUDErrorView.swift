@@ -36,7 +36,7 @@ open class PKHUDErrorView: PKHUDSquareBaseView, PKHUDAnimating {
         #endif
 
         dash.fillColor   = nil
-        dash.strokeColor = HUDConfig.mainColor.withAlphaComponent(0.85).cgColor
+        dash.strokeColor = HUDConfig.mainColor.cgColor
         dash.lineWidth   = 6
         return dash
     }

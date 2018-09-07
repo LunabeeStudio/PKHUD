@@ -33,7 +33,7 @@ open class PKHUDSuccessView: PKHUDSquareBaseView, PKHUDAnimating {
         #endif
 
         layer.fillColor   = nil
-        layer.strokeColor = HUDConfig.mainColor.withAlphaComponent(0.85).cgColor //UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
+        layer.strokeColor = HUDConfig.mainColor.cgColor //UIColor(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
         layer.lineWidth   = 6.0
         return layer
     }()

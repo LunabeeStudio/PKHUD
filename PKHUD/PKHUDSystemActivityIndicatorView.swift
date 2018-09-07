@@ -41,7 +41,7 @@ public final class PKHUDSystemActivityIndicatorView: PKHUDSquareBaseView, PKHUDA
 
     let activityIndicatorView: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
-        activity.color = HUDConfig.mainColor.withAlphaComponent(0.85)
+        activity.color = HUDConfig.mainColor
         return activity
     }()
 

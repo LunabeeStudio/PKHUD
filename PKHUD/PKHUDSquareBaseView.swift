@@ -25,7 +25,7 @@ open class PKHUDSquareBaseView: UIView {
     public init(image: UIImage? = nil, title: String? = nil, subtitle: String? = nil) {
         super.init(frame: PKHUDSquareBaseView.defaultSquareBaseViewFrame)
         self.imageView.image = image
-        imageView.tintColor = HUDConfig.mainColor.withAlphaComponent(0.85)
+        imageView.tintColor = HUDConfig.mainColor
         titleLabel.text = title
         subtitleLabel.text = subtitle
 
@@ -46,7 +46,7 @@ open class PKHUDSquareBaseView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.font = HUDConfig.titleLabelFont
-        label.textColor = HUDConfig.mainColor.withAlphaComponent(0.85)
+        label.textColor = HUDConfig.mainColor
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.25
         return label
@@ -56,7 +56,7 @@ open class PKHUDSquareBaseView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.font = HUDConfig.subtitleLabelFont
-        label.textColor = HUDConfig.mainColor.withAlphaComponent(0.7)
+        label.textColor = HUDConfig.subtitleColor
         label.adjustsFontSizeToFitWidth = true
         label.numberOfLines = 2
         label.adjustsFontSizeToFitWidth = true
