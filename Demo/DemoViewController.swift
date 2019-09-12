@@ -13,15 +13,27 @@ class DemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        PKHUD.sharedHUD.effect = UIBlurEffect(style: .dark)
+ if #available(iOS 13.0, *) {
+        PKHUD.sharedHUD.effect = UIBlurEffect(style: .prominent)
         HUD.dimsBackground = true
         HUD.allowsInteraction = false
-        HUDConfig.mainColor = UIColor.white
+        HUDConfig.mainColor = UIColor.label
+       
+            HUDConfig.subtitleColor = .label
         
+        }
+        PKHUD.sharedHUD.leadingMargin = 8
+        PKHUD.sharedHUD.trailingMargin = 8
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+         //HUD.show(.labeledProgress(title: "This tesx sd fqs dfsqfd qs", subtitle: "qsdfj qsdfjqsldfk qsfd sqdf jsqdf  qs"))
     }
 
     @IBAction func showAnimatedSuccessHUD(_ sender: AnyObject) {
+
         HUD.flash(.labeledSuccess(title: "Gregé", subtitle: "HOUOIUOUO"), delay: 2.0)
     }
 
