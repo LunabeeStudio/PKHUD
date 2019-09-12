@@ -13,17 +13,17 @@ class DemoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
- if #available(iOS 13.0, *) {
-        PKHUD.sharedHUD.effect = UIBlurEffect(style: .prominent)
-        HUD.dimsBackground = true
-        HUD.allowsInteraction = false
-        HUDConfig.mainColor = UIColor.label
-       
-            HUDConfig.subtitleColor = .label
-        
-        }
-        PKHUD.sharedHUD.leadingMargin = 8
-        PKHUD.sharedHUD.trailingMargin = 8
+// if #available(iOS 13.0, *) {
+//        PKHUD.sharedHUD.effect = UIBlurEffect(style: .prominent)
+//        HUD.dimsBackground = true
+//        HUD.allowsInteraction = false
+//        HUDConfig.mainColor = UIColor.label
+//
+//            HUDConfig.subtitleColor = .label
+//
+//        }
+//        PKHUD.sharedHUD.leadingMargin = 8
+//        PKHUD.sharedHUD.trailingMargin = 8
         
     }
     

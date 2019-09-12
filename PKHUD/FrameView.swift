@@ -13,7 +13,12 @@ import UIKit
 internal class FrameView: UIVisualEffectView {
 
     internal init() {
-        super.init(effect: UIBlurEffect(style: .light))
+        if #available(iOS 10.0, *) {
+            super.init(effect: UIBlurEffect(style: .prominent))
+        } else {
+            super.init(effect: UIBlurEffect(style: .light))
+        }
+        
         commonInit()
     }
 
