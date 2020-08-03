@@ -13,6 +13,8 @@
 		3097AF3A1C4843AE007DD42B /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */; };
 		37E591FB2142C16F00557207 /* PKHUDConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E591FA2142C16F00557207 /* PKHUDConfig.swift */; };
 		640011571C5B6C080013F32B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640011551C5B6C080013F32B /* HUD.swift */; };
+		ABB49BE9243303A2009539BB /* CustomProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB49BE8243303A2009539BB /* CustomProgressView.xib */; };
+		ABB49BEB243304EC009539BB /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB49BEA243304EC009539BB /* CustomProgressView.swift */; };
 		F908BEC01BB849290015E5A8 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */; };
 		F908BEC31BB84D0B0015E5A8 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEC21BB84D0B0015E5A8 /* PKHUDAnimating.swift */; };
 		F908BEC51BB852C60015E5A8 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F908BEC41BB852C60015E5A8 /* PKHUDErrorView.swift */; };
@@ -90,6 +92,8 @@
 		3097AF391C4843AE007DD42B /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
 		37E591FA2142C16F00557207 /* PKHUDConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHUDConfig.swift; sourceTree = "<group>"; };
 		640011551C5B6C080013F32B /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		ABB49BE8243303A2009539BB /* CustomProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomProgressView.xib; sourceTree = "<group>"; };
+		ABB49BEA243304EC009539BB /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		F908BEBF1BB849290015E5A8 /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDSuccessView.swift; sourceTree = "<group>"; };
 		F908BEC21BB84D0B0015E5A8 /* PKHUDAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDAnimating.swift; sourceTree = "<group>"; };
 		F908BEC41BB852C60015E5A8 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKHUDErrorView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 			children = (
 				F996320119514FAC001F73CA /* AppDelegate.swift */,
 				F996325819515052001F73CA /* DemoViewController.swift */,
+				ABB49BE8243303A2009539BB /* CustomProgressView.xib */,
+				ABB49BEA243304EC009539BB /* CustomProgressView.swift */,
 				F935B1571B2B8088003C3734 /* Storyboard.storyboard */,
 				F935B1591B2B865A003C3734 /* Launch Screen.storyboard */,
 				F996320319514FAD001F73CA /* Images.xcassets */,
@@ -384,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB49BE9243303A2009539BB /* CustomProgressView.xib in Resources */,
 				F935B15A1B2B865A003C3734 /* Launch Screen.storyboard in Resources */,
 				F996320419514FAD001F73CA /* Images.xcassets in Resources */,
 				F935B1581B2B8088003C3734 /* Storyboard.storyboard in Resources */,
@@ -432,6 +439,7 @@
 			files = (
 				F996325919515052001F73CA /* DemoViewController.swift in Sources */,
 				F996320219514FAC001F73CA /* AppDelegate.swift in Sources */,
+				ABB49BEB243304EC009539BB /* CustomProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

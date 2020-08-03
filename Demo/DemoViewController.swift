@@ -42,14 +42,43 @@ class DemoViewController: UIViewController {
         HUD.hide(afterDelay: 2.0)
     }
 
+    
+   
+    
     @IBAction func showAnimatedProgressHUD(_ sender: AnyObject) {
-        HUD.show(.progress)
-
-        // Now some long running task starts...
-        delay(2.0) {
-            // ...and once it finishes we flash the HUD for a second.
-            HUD.flash(.success, delay: 1.0)
+        
+        let progressView = CustomProgressView.view()
+        
+        HUD.show(.customView(view: progressView))
+        progressView.progressBar.progress = 0
+        progressView.progressLabel.text = "0 %"
+        
+        delay(0.5) {
+            progressView.progressBar.progress = 0.10
+            progressView.progressLabel.text = "10 %"
         }
+        delay(1) {
+            progressView.progressBar.progress = 0.20
+            progressView.progressLabel.text = "20 %"
+        }
+        delay(1.5) {
+            progressView.progressBar.progress = 0.30
+            progressView.progressLabel.text = "30 %"
+        }
+        delay(2) {
+            progressView.progressBar.progress = 1
+            progressView.progressLabel.text = "100 %"
+        }
+//        delay(2.5) {
+//            HUD.hide()
+//        }
+        
+//
+//        // Now some long running task starts...
+//        delay(2.0) {
+//            // ...and once it finishes we flash the HUD for a second.
+//            HUD.flash(.success, delay: 1.0)
+//        }
     }
 
     @IBAction func showCustomProgressHUD(_ sender: AnyObject) {
